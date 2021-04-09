@@ -12,11 +12,16 @@ The growth of modern devices like phones,tablets,laptop have increased the deman
 
 
 ## Cost and Features
-![Description](Link to Pic)
--- Content 
-huh
+#### Cost
+
+
+#### Features
+Features of this game include, it gives an option to the user select between games and have fun.The user can select either hangman or handcricket game. Hangman is a multiuser game where nonplayer decides the word and the players guess it within the limited number of trials. Handcricket is singleuser game where the user can play with computer.
+
 ## Defining Our System
-    -- TBD--------------
+ ![image](game2.png)
+ 
+ The system consists of two games, hangman and handcricket. The user can enter his choice of his game and play accordingly.
 ## SWOT ANALYSIS
 ![SWOT-Sample](Link to Pic)
 
