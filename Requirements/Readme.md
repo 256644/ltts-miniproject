@@ -12,10 +12,10 @@ The growth of modern devices like phones,tablets,laptop have increased the deman
 
 
 ## Cost and Features
-#### Cost:
+### Cost:
 
 
-#### Features:
+### Features:
 Features of this game include, it gives an option to the user select between games and have fun.The user can select either hangman or handcricket game. Hangman is a multiuser game where nonplayer decides the word and the players guess it within the limited number of trials. Handcricket is singleuser game where the user can play with computer.
 
 ## Defining Our System
@@ -23,10 +23,10 @@ Features of this game include, it gives an option to the user select between gam
  
  The system consists of two games, hangman and handcricket. The user can enter his choice of his game and play accordingly.
 
-#### Hangman:
+### Hangman:
 Hangman is an old school favorite, a word game where the goal is simply to find the missing word or words. It is a game of two or more players. Where one player gives the word. And the other tries to think of the word.
 
-#### Handcricket
+### Handcricket
 Handcricket is an effort to help you recall your childhood version of Cricket, which you used to play with hands. This is a game which can be played with hands, in which fingers are used to draw a score. If both players draw the same number, batsman is declared to be OUT. Otherwise, the score of batsmen is added to the count. 
 
 
@@ -35,19 +35,19 @@ Handcricket is an effort to help you recall your childhood version of Cricket, w
 
 # 4W&#39;s and 1&#39;H
 
-#### Who:
+### Who:
 Users of almost all age group can use this.
 
-#### What:
+### What:
 It is a gaming application, where the users can select the game of their choice and play. As of now it has only handcricket and hangman games.
 
-#### When:
+### When:
 Anytime the user can play and refresh his mind.
 
-#### Where:
+### Where:
 It can played by the young kids in thier playing hours to the people of all age groups to take break from the highly packed schedule and enjoy.
 
-#### How:
+### How:
 The system gives the user to choose the game which he wants to play.
 If the user selects Hangman:
 
