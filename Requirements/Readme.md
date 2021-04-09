@@ -31,7 +31,7 @@ Handcricket is an effort to help you recall your childhood version of Cricket, w
 
 
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![SWOT-Sample](swot.png)
 
 # 4W&#39;s and 1&#39;H
 
