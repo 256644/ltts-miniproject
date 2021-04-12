@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 //#include <stdio_ext.h>
+/**
+ * @brief structure used to hold the users name palce and his id
+ * 
+ */
 typedef struct
 {
   char user_name[100];

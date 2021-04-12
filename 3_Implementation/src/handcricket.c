@@ -1,7 +1,22 @@
+/**
+ * @file handcricket.c
+ * @author ramya name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-12
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include "handcricket.h"
+/**
+ * @brief handcricket function which takes users input
+ * and asks him to enter over he wants to play
+ * 
+ */
 
 void handcricket()
 {
@@ -47,8 +62,12 @@ void handcricket()
   else
   printf("computer won the match \n %s better luck next time\n",player->user_name);
   
-
 }
+/**
+ * @brief function which scans the user details
+ * 
+ * @param val a struct pointer which has character and integer values
+ */
 
 void user_details(handcricket_user *val)
 {
@@ -60,6 +79,12 @@ void user_details(handcricket_user *val)
   scanf("%d",&(val+0)->user_id);
   
 }
+/**
+ * @brief function if user choose batting
+ * 
+ * @param over number of overs the user wants to play
+ * @return int  it returns the score
+ */
 
 int bat(int over)
 {
@@ -94,6 +119,12 @@ int bat(int over)
   }
   return score;
 }
+/**
+ * @brief function if it is bowling
+ * 
+ * @param over number of overs the user wants to play
+ * @return int return the score
+ */
 int bowl(int over)
 {
   int run,score=0;

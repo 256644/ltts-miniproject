@@ -1,4 +1,8 @@
-
+/**
+ * @brief structue that keeps the name of the players 
+ * and their score
+ * 
+ */
 typedef struct 
 {
  char user_name[100];
