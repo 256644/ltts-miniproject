@@ -12,5 +12,7 @@ typedef struct
 
 void print(char ar[][5]);
 void hangman();
+int i_value(int wrong);
+int j_value(int wrong);
 int check(char *wtg,char key,int length,char *player);
 void users_name(hangman_user *val,int num);
