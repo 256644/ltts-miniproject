@@ -75,7 +75,7 @@ If the user selects Handcricket:
 ----
 ## High Level Requirements:
 |ID| Description   | Category   |
-|----|----|----|----|
+|----|----|----|
 |   HRO1 |  System shall allow user to select between two games   | Technical  |
 |   HRO2 |  In Hangman game,system shall allow user to enter his details  | Technical |
 |   HRO3 |System shall display hangman structure everytime the user guess the wrong character  |Technical|
