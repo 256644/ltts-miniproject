@@ -1,30 +1,68 @@
-PROJECT_NAME=game
-#TEST_NAME=testf
-SRC=3_Implementation/project_main.c\
+# Name of the project
+PROJECT_NAME = game
+
+# Output directory
+BUILD = build
+
+# All source code files
+SRC = 3_Implementation/project_main.c\
 3_Implementation/src/handcricket.c\
 3_Implementation/src/hangman.c\
 
-SRC2=3_Implementation/src/handcricket.c\
-3_Implementation/src/hangman.c\
-
-TEST_SRC= 3_Implementation/test/test.c \
-3_Implementation/unity/unity.c
-
-INC_H =3_Implementation/inc
-INC_T =3_Implementation/unity
+# All test source files
+TEST_SRC = 3_Implementation/test/test.c \
+3_Implementation/unity/unity.c\
+3_Implementation/src/handcricket.c\
+3_Implementation/src/hangman.c
 
 
-all.exe:
-	gcc $(SRC) -I $(INC_H) -I $(INC_T)  -o $(PROJECT_NAME).exe
-test:
-	gcc $(SRC2) $(TEST_SRC) -I $(INC_H) -I $(INC_T) -o testf.exe
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
+# All include folders with header files
+INC	=-I3_Implementation/inc\
+-I3_Implementation/unity
 
- 
-run:$(PROJECT_NAME).exe
-	$(PROJECT_NAME).exe
+#Library Inlcudes
+#if working with CUnit 
+#INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS =
 
-cppcheck:
-	cppcheck --enable=all $(SRC)
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
 
+# Default target built
+$(PROJECT_NAME):all
+
+# Run the target even if the matching name exists
+.PHONY: run clean test doc all
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC)  $(INC) -o $(PROJECT_OUTPUT)
+
+# Call `make run` to run the application
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT)
+
+# Document the code using Doxygen
+#doc:
+#	make -C ./documentation
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC)  $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
+#Coverage
+coverageCheck:$(BUILD)
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC)  $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
+
+# Remove all the built files, invoke by `make clean`
+clean:
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
