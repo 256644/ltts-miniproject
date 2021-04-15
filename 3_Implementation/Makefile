@@ -5,22 +5,22 @@ PROJECT_NAME = game
 BUILD = build
 
 # All source code files
-SRC = 3_Implementation/project_main.c\
-3_Implementation/src/handcricket.c\
-3_Implementation/src/hangman.c\
+SRC = project_main.c\
+src/handcricket.c\
+src/hangman.c\
 
 # All test source files
-TEST_SRC = 3_Implementation/test/test.c \
-3_Implementation/unity/unity.c\
-3_Implementation/src/handcricket.c\
-3_Implementation/src/hangman.c
+TEST_SRC = test/test.c \
+unity/unity.c\
+src/handcricket.c\
+src/hangman.c
 
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC	=-I3_Implementation/inc\
--I3_Implementation/unity
+INC	=-Iinc\
+-Iunity
 
 #Library Inlcudes
 #if working with CUnit 
